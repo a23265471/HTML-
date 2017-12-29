@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+html
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	
+	width: 100%;
+	height: 100%;
+	background: #FFE6E6 url('../s1410422014/home/資產 2.png') ;
+}
+#Contain
+{
+	position: relative;
+	margin: 0 auto;
+	width: 75%;
+	padding-bottom: 8%;
+	height: 0;
+	
+	
+	/*background: #B09ED6;*/
+}
+#Profolio
+{
+	
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	/*background: #904344;*/
+}
+
+
+#Who
+{	
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	right: 0;
+	top: 10%;
+	/*background: #3D2222;*/
+}
+
+
+
+#MapOut
+{
+	padding-bottom: 50%;
+	width: 75%;
+	height: 0;
+	
+	/*min-width: 365px;
+	min-height: 258.3px;*/
+	
+	position: relative;
+	margin: 0 auto;	
+	/*background: #9F2325;*/
+}
+
+#Map
+{
+	position: absolute;
+	background: url('../s1410422014/home/資產 5k.png');
+	background-size: cover;
+	background-position: 5% 5%;
+	border: 6px solid #FF99B7;
+	border-radius: 30px;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	
+}
+
+.JumpPeople
+{
+	position: absolute;
+	height: 30%;
+	width: 13%;	
+	background: #9F4243;
+	opacity: 0.5;
+}
+
+#Start_P img,#ch1 img,#ch2 img,#ch3 img,#ch4 img
+{
+	position: absolute;
+	top: 2%;
+	right: 0;
+	
+}
+
+#Start_P
+{
+	
+	bottom: 20%;
+	left: 15%;	
+	
+}
+#ch1
+{
+	
+	bottom: 45%;
+	left: 33%;
+	
+}
+#ch2
+{
+	bottom: 23%;
+	left: 46%;
+	
+}
+#ch3
+{
+	
+	bottom: 45%;
+	left: 61%;
+	
+}
+#ch4
+{
+	
+	bottom: 23%;
+	left: 74.5%;
+	
+}
+
+
+
+
+
