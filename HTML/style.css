@@ -17,9 +17,10 @@ body
 	position: relative;
 	margin: 0 auto;
 	width: 75%;
-	padding-bottom: 8%;
+	padding-bottom: 10%;
 	height: 0;
 	
+	min-width: 340px;
 	
 	/*background: #B09ED6;*/
 }
@@ -51,11 +52,11 @@ body
 	width: 75%;
 	height: 0;
 	
-	/*min-width: 365px;
-	min-height: 258.3px;*/
+	min-width: 340px;
+	
 	
 	position: relative;
-	margin: 0 auto;	
+	margin: 0 auto 2% auto;	
 	/*background: #9F2325;*/
 }
 
@@ -78,16 +79,31 @@ body
 	position: absolute;
 	height: 30%;
 	width: 13%;	
-	background: #9F4243;
-	opacity: 0.5;
+	/*background: #9F4243;
+	opacity: 0.5;*/
 }
-
-#Start_P img,#ch1 img,#ch2 img,#ch3 img,#ch4 img
+#Start_P img
 {
 	position: absolute;
-	top: 2%;
+	width: 70%;
+	bottom: 25%;
 	right: 0;
 	
+}
+#ch1 img,#ch2 img,#ch3 img,#ch4 img
+{
+	position: absolute;
+	width: 70%;
+	bottom: 10%;
+	right: 0;
+	opacity: 0;
+	
+	transition: bottom 2s;
+}
+
+#ch1 img:hover,#ch2 img:hover,#ch3 img:hover,#ch4 img:hover
+{
+	 bottom: 25%;
 }
 
 #Start_P
