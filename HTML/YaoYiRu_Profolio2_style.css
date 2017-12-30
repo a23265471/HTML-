@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+html
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	width: 100%;
+	height: 100%;
+}
+
+#section1
+{
+	background: url("../s1410422014/P2/資產 9new.png") 50% 0 no-repeat fixed;
+	background-size: cover;
+	margin: 0;
+    padding: 200px 0 260px 0;
+	width: 100%;
+	height: 150%;
+	position: relative;
+}
+#Contain_1
+{
+	position: absolute;
+	background: #FFFFF8;
+	width: 100%;
+	height: 55%;
+	top:40%;
+}
+#Container_1
+{
+	position: relative;
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+	
+	background: #B16F6F;
+}
+#About_Me
+{
+	
+	background: #9F4849;
+	
+}
+#Skill
+{
+	
+	background: #4D9CB0;
+	
+	
+}

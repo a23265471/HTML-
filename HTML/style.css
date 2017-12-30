@@ -49,6 +49,7 @@ body
 #MapOut
 {
 	padding-bottom: 50%;
+	
 	width: 75%;
 	height: 0;
 	
@@ -64,7 +65,7 @@ body
 {
 	position: absolute;
 	background: url('../s1410422014/home/資產 5k.png');
-	background-size: cover;
+	background-size: 101% 101%;
 	background-position: 5% 5%;
 	border: 6px solid #FF99B7;
 	border-radius: 30px;
@@ -82,61 +83,83 @@ body
 	/*background: #9F4243;
 	opacity: 0.5;*/
 }
-#Start_P img
+.StartPoeple
 {
 	position: absolute;
 	width: 70%;
-	bottom: 25%;
+	bottom: 35%;
 	right: 0;
+	
+	
+	animation: alpha 2s;
 	
 }
-#ch1 img,#ch2 img,#ch3 img,#ch4 img
-{
-	position: absolute;
-	width: 70%;
-	bottom: 10%;
-	right: 0;
-	opacity: 0;
+@keyframes alpha {
+    from {opacity: 0;bottom: 13%;}
+    to {opacity: 1;bottom: 35%;}
 	
-	transition: bottom 2s;
 }
 
-#ch1 img:hover,#ch2 img:hover,#ch3 img:hover,#ch4 img:hover
+#ChImge1,#ChImge2,#ChImge3,#ChImge4{opacity: 0;}
+
+.People1,.People2,.People3,.People4
 {
-	 bottom: 25%;
+	position: absolute;
+	width: 70%;
+	bottom: 23%;
+	right: 0;
+	
+	
+	animation: JumpPeopleAnimation 1s;
+
+}
+
+@keyframes JumpPeopleAnimation {
+    from 
+	{
+		opacity: 0;
+	 	bottom: 11%;
+	}
+    to 
+	{
+		opacity: 1;
+		bottom: 23%;
+	}
+	
+	
 }
 
 #Start_P
 {
 	
-	bottom: 20%;
+	bottom: 23%;
 	left: 15%;	
 	
 }
 #ch1
 {
 	
-	bottom: 45%;
+	bottom: 48%;
 	left: 33%;
 	
 }
 #ch2
 {
-	bottom: 23%;
+	bottom: 26%;
 	left: 46%;
 	
 }
 #ch3
 {
 	
-	bottom: 45%;
+	bottom: 48%;
 	left: 61%;
 	
 }
 #ch4
 {
 	
-	bottom: 23%;
+	bottom: 26%;
 	left: 74.5%;
 	
 }

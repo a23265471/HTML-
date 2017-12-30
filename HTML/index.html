@@ -19,17 +19,25 @@
 	function mouseIn(now)
 	{
 		var People=document.getElementById("ChImge"+now);
-		var StartPeople=document.getElementById("StartPoeple");
-		People.style.opacity=1;	
+		var StartPeople=document.getElementById("StartPeopleId");
 		
+		People.style.opacity=1;	
+		People.classList.add("People"+now);
+				
 		StartPeople.style.opacity=0;
+		StartPeople.classList.remove("StartPoeple");
 	}
 	function mouseOut(now)
 	{
 		var People=document.getElementById("ChImge"+now);
-		var StartPeople=document.getElementById("StartPoeple");
+		var StartPeople=document.getElementById("StartPeopleId");
+		
 		People.style.opacity=0;	
+		People.classList.remove("People"+now);
+		
 		StartPeople.style.opacity=1;
+		StartPeople.classList.add("StartPoeple");
+		
 	}
 	
 </script>
@@ -42,12 +50,13 @@
 
 <div id="MapOut">
 	<div id="Map">
-	<div id="Start_P" class="JumpPeople" onMouseOut="mouseOut(1)"><img src="../s1410422014/home/資產 17.png" class="img-responsive" id="StartPoeple"></div>
+	<div id="Start_P" class="JumpPeople" ><img src="../s1410422014/home/資產 17.png" class="img-responsive StartPoeple" id="StartPeopleId"></div>
 	<a href="#"><div id="ch1" class="JumpPeople" onmouseover="mouseIn(1);" onMouseOut="mouseOut(1)"><img src="../s1410422014/home/資產 17.png" class="img-responsive" id="ChImge1"></div></a>
 	<a href="#"><div id="ch2" class="JumpPeople" onmouseover="mouseIn(2);" onMouseOut="mouseOut(2)"><img src="../s1410422014/home/資產 17.png" class="img-responsive" id="ChImge2"></div></a>
 	<a href="#"><div id="ch3" class="JumpPeople" onmouseover="mouseIn(3);" onMouseOut="mouseOut(3)"><img src="../s1410422014/home/資產 17.png" class="img-responsive" id="ChImge3"></div></a>
 	<a href="#"><div id="ch4" class="JumpPeople" onmouseover="mouseIn(4);" onMouseOut="mouseOut(4)"><img src="../s1410422014/home/資產 17.png" class="img-responsive" id="ChImge4"></div></a>
 	</div>
+	
 </div>
 	
 
