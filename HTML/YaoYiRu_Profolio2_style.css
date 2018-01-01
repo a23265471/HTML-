@@ -224,7 +224,7 @@ body
 	height: 0;
 	position: absolute;
 	left: 20%;
-	top: 15%;
+	top: 13%;
 /*	background: #545770;*/
 }
 #People_2
@@ -252,6 +252,102 @@ body
 	border-radius: 4px;
 	border-color: #FFA9BF;
 }
-
-
 /*------------section 2---------------*/
+/*------------section 3---------------*/
+#section3
+{
+	width: 100%;
+	padding-bottom: 50%;
+	background: #FFE9E6 url("s1410422014/P2/資產 21.png") 0 0 repeat fixed;
+	background-size: contain;
+	position: relative;
+	height: 0;
+	
+}
+#Contain_3
+{
+	width: 100%;
+	padding-bottom: 40%;
+	height: 0;
+	position: absolute;
+	top: 35%;
+	/*background: #FFFFFF;*/
+}
+.Peoples
+{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+#container_3
+{
+	width: 100%;
+	padding-bottom: 50%;
+	height: 0;
+	position: absolute;
+	top: 38.5%;
+	background: #FFFFFF;	
+}
+.MainContain
+{
+	width: 75%;
+	margin: 0 auto;
+	/*background: #AB8AD9;*/
+}
+#title3
+{
+	margin-left: 5%;
+	
+	font-family: Impact;
+	color: #CE8AA4;
+	font-size: 3vw;
+}
+
+.LeftContain
+{
+	/*background: #3AB06C;*/
+	
+}
+.LeftContain div
+{
+	width: 80%;
+	text-align: justify;
+	/*background: #E09E9F;*/
+}
+.LeftContain h ,.RightContain h
+{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #876588;
+	font-size: 1.5vw;
+	line-height: 1.8;
+	word-spacing: 3px;
+	margin-left: 10%;
+}
+.LeftContain p ,.RightContain p
+{
+	margin-top: 3%;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #7F7795;
+	font-size: 1.2vw;
+	line-height: 1.8;
+	word-spacing: 3px;
+	margin-left: 10%;
+	
+}
+.RightContain
+{
+	/*background: #C07F7E;*/
+}
+.RightContain div
+{
+	width: 80%;
+	text-align: justify;
+}
+
+
+/*------------section 3---------------*/
+
+
+
