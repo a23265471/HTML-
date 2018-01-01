@@ -36,18 +36,130 @@ body
 	height: 100%;
 	margin: 0 auto;
 	
-	background: #B16F6F;
+	/*background: #B16F6F;*/
 }
 #About_Me
 {
 	
-	background: #9F4849;
+	/*background: #9F4849;*/
+	padding-bottom: 5%;
+	padding-top: 12%;
 	
 }
-#Skill
+#picture
 {
 	
-	background: #4D9CB0;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 40%;
+	float: left;
 	
+}
+
+#Introduction_Me
+{
+	width: 45%;
+	
+	margin: 7% 5% 5% 50%;
+	/*background: #122756;*/
+}
+#Introduction_Me h1
+{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color:  #73417D;
+	font-size: 1.5vw;
+	
+}
+#Introduction_Me p
+{
+	font-family: Arial;
+	font-weight: bold;
+	color:  #89608B;
+	font-size: 1.3vw;
+	line-height: 1.8;
+	
+}
+
+
+#School
+{
+	width: 80%;
+	/*background: #778332;*/
+	margin:10% 10% 10% 10%; 
+}
+
+#School h
+{
+	font-family: Arial;
+	font-weight: bold;
+	color:  #73417D;
+	font-size: 1.5vw;
+		
+}
+#School p
+{
+	font-family: Arial;
+	font-weight: bold;
+	color:  #89608B;
+	font-size: 1.3vw;
+	line-height: 1.8;
+}
+
+#Skill
+{
+	/*background: #4D9CB0;*/
+	padding-bottom: 5%;
+	padding-top: 15%;
+	
+}
+#SelectBar
+{
+	width: 100%;
+	height: 10%;
+	/*background: #973133;*/
+	
+}
+#Application
+{
+	width: 30%;
+	float: left;
+}
+#Design
+{
+	margin-left: 35%;
+	width: 20%;
+}
+
+.Score_bar
+{
+	background: #6E1B1C;
+	height: 5%;
+	width: 100%;
+	position: relative;
+	margin: 2.5% 0 2.5% 0;
+}
+.Subject
+{
+	
+	background: #B58D8E;
+	width: 25%;
+	
+}
+.Score_img
+{
+	position: absolute;
+	width:  65%;
+	right: 10%;
+	top: 0;	
+}
+.score_math
+{
+	position: absolute;
+	width:  10%;
+	right: 0;
+	top: 0;
+	background: #AEC1E7;
+	text-align: center;
 	
 }
