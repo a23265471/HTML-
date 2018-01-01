@@ -10,7 +10,7 @@ body
 	
 	width: 100%;
 	height: 100%;
-	background: #FFE6E6 url('../s1410422014/home/資產 2.png') ;
+	background: #FFE6E6 url('s1410422014/home/資產 2.png') ;
 }
 #Contain
 {
@@ -64,7 +64,7 @@ body
 #Map
 {
 	position: absolute;
-	background: url('../s1410422014/home/資產 5k.png');
+	background: url('s1410422014/home/資產 5k.png');
 	background-size: 101% 101%;
 	background-position: 5% 5%;
 	border: 6px solid #FF99B7;

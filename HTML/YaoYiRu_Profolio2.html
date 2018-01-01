@@ -12,52 +12,113 @@
 </head>
 
 <body>
-
+<script>
+	function Change_APP()
+	{
+		var APP=document.getElementById("APP_Score");
+		var Design=document.getElementById("Design_Score");
+		APP.style.opacity=1;
+		Design.style.opacity=0;
+			
+	}
+	function Change_Design()
+	{
+		var APP=document.getElementById("APP_Score");
+		var Design=document.getElementById("Design_Score");
+		APP.style.opacity=0;
+		Design.style.opacity=1;
+	}
+	
+	
+</script>
+<!-----HTML ----->
 <div id="section1" > 
 	<div id="Contain_1">
 		<div id="Container_1" class="container-fluid">
 		
 		<div class="row">
-			<div id="About_Me" class="col-sm-7">
-				
-					<div id="picture"><img src="../s1410422014/23976584056_f4ef3418e0_o.jpg" class="img-responsive"></div>
+			<div id="About_Me" class="col-sm-7">	
+					<div id="picture"><img src="s1410422014/23976584056_f4ef3418e0_o.jpg" class="img-responsive"></div>
 					<div id="Introduction_Me">
 					<h1>姚怡如 Yao, Yi-Ru</h1> 
 						<p>1997/03/06 Taiwan Taichung<br>+886  0939-984321<br>a23265471@gmail.com</p>
 					</div>
-				
 				<div id="School">
 					<h>Experience</h>
 					<p>國立臺中高級工業職業學校   電子科<br>國立臺中科技大學   多媒體設計系</p>
 				</div>
 			</div>
-							
-			<div id="Skill" class="col-sm-5">
-				
+<!-- -------------------------SKill-------------------------------->							
+			<div id="Skill" class="col-sm-5">	
 				<div id="SelectBar">
-					<img src="../s1410422014/P2/資產 11new.png" class="img-responsive" id="Application">
-					<img src="../s1410422014/P2/資產 12new.png" class="img-responsive" id="Design">		
+					<img src="s1410422014/P2/資產 11new.png" class="img-responsive" id="Application" onclick="Change_APP();">
+					<img src="s1410422014/P2/資產 12new.png" class="img-responsive" id="Design" 
+					onclick="Change_Design();">		
 				</div>
-				<div id="Design_Score">
+<!-- ---------------Design Score------------ -->	
+			<div id="Score_Design_APP">			
+				<div id="Design_Score">	
+				<div class="Score_bar">
+					<div class="Subject"><h>illustrator</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.5.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.5</h></div>		
+				</div>	
+				<div class="Score_bar">
+					<div class="Subject"><h>photoshop</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_3.5.png" class="img-responsive"></div>
+					<div class="score_math"><h>3.5</h></div>		
+				</div>		
+				<div class="Score_bar">
+					<div class="Subject"><h>premiere</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_3.png" class="img-responsive"></div>
+					<div class="score_math"><h>3</h></div>		
+				</div>
+				<div class="Score_bar">
+					<div class="Subject"><h>lightroom</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_3.5.png" class="img-responsive"></div>
+					<div class="score_math"><h>3.5</h></div>		
+				</div>		
+				</div>	
+<!-- ---------------Design Score------------ -->				
+<!-- ---------------APP Score--------------- -->				
+				<div id="APP_Score">	
+				<div class="Score_bar">
+					<div class="Subject"><h>C++</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.5.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.5</h></div>		
+				</div>	
+				<div class="Score_bar">
+					<div class="Subject"><h>C#</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.0</h></div>		
+				</div>		
+				<div class="Score_bar">
+					<div class="Subject"><h>Javascript</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_3.png" class="img-responsive"></div>
+					<div class="score_math"><h>3.0</h></div>		
+				</div>
+				<div class="Score_bar">
+					<div class="Subject"><h>HTML</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4</h></div>		
+				</div>
+				<div class="Score_bar">
+					<div class="Subject"><h>CSS</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4</h></div>		
+				</div>		
+				<div class="Score_bar">
+					<div class="Subject"><h>Unity</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4</h></div>		
+				</div>		
+				</div>	
 				
-				<div class="Score_bar">
-					<div class="Subject">illustrator</div>
-					<div class="Score_img"><img src="../s1410422014/P2/資產 17new.png" class="img-responsive"></div>
-					<div class="score_math">4.5</div>		
-				</div>	
-				<div class="Score_bar">
-					<div class="Subject">illustrator</div>
-					<div class="Score_img"><img src="../s1410422014/P2/資產 17new.png" class="img-responsive"></div>
-					<div class="score_math">4.5</div>		
-				</div>	
-					
-					
-					
-					
-				</div>	
+				
 				
 				
 				</div>
+			</div>
 				
 			
 			
@@ -67,10 +128,62 @@
 		
 </div>
 
-
 <div id="section2">
 	
 	
+	<div id="container_2">
+		
+		
+		<div id="illustration">
+<!--------------------BOOSTRAPT-------------------------->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+   			 <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="s1410422014/資產 5new.png" style="width:100%;" class="img-responsive">
+      </div>
+
+      <div class="item">
+        <img src="s1410422014/資產 3new.png" style="width:100%;" class="img-responsive">
+      </div>
+    
+      <div class="item">
+        <img src="s1410422014/資產 2new.png" style="width:100%;" class="img-responsive">
+      </div>
+      <div class="item">
+        <img src="s1410422014/資產 4new.png" style="width:100%;" class="img-responsive">
+      </div>
+      <div class="item">
+        <img src="s1410422014/資產 1new.png" style="width:100%;" class="img-responsive">
+      </div>
+      <div class="item">
+        <img src="s1410422014/資產 6new.png" style="width:100%;" class="img-responsive">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    </a>
+  </div>
+<!--------------------BOOSTRAPT-------------------------->		
+			
+			
+		</div>
+		<div id="People_2"><img src="s1410422014/P2/資產 26new.png" class="img-responsive"></div>	
+	</div>
+	
+			
 </div>
 
 

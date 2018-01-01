@@ -13,7 +13,7 @@ body
 
 #section1
 {
-	background: url("../s1410422014/P2/資產 9new.png") 50% 0 no-repeat fixed;
+	background: url("s1410422014/P2/資產 9new.png") 50% 0 no-repeat fixed;
 	background-size: cover;
 	margin: 0;
     padding: 200px 0 260px 0;
@@ -120,32 +120,67 @@ body
 	/*background: #973133;*/
 	
 }
+/*--------------APP Design------------*/
 #Application
 {
-	width: 30%;
-	float: left;
+	width: 29%;
+	float: left;	
 }
 #Design
 {
 	margin-left: 35%;
 	width: 20%;
 }
+#Application:hover,#Design:hover
+{
+	filter: hue-rotate(260deg);
+}
+
+#Score_Design_APP
+{
+	width: 100%;
+	/*background: #466B98;*/
+	position: relative;
+}
+
+#Design_Score
+{
+	width: 100%;
+	/*background: #108E70;*/
+	position: absolute;
+	margin-top: 5%;
+	opacity: 0;	
+}
+#APP_Score
+{
+	width: 100%;
+	/*background: #7B4C8E;*/
+	position: absolute;
+	margin-top: 5%;
+	opacity: 1;
+}
 
 .Score_bar
 {
-	background: #6E1B1C;
+	/*background: #6E1B1C;*/
 	height: 5%;
 	width: 100%;
 	position: relative;
 	margin: 2.5% 0 2.5% 0;
 }
 .Subject
-{
-	
-	background: #B58D8E;
+{	
+	/*background: #B58D8E;*/
 	width: 25%;
-	
 }
+.Subject h
+{
+	font-family: 微軟正黑體;
+	font-size: 1.2vw;
+	font-weight: bold;
+	color: #89608B;
+}
+
 .Score_img
 {
 	position: absolute;
@@ -159,7 +194,64 @@ body
 	width:  10%;
 	right: 0;
 	top: 0;
-	background: #AEC1E7;
+/*	background: #AEC1E7;*/
 	text-align: center;
+}
+.score_math h
+{	
+	font-family: 微軟正黑體;
+	font-size: 1.2vw;
+	font-weight: bold;
+	color: #CD7192;
+}
+/*--------------APP Design------------*/
+
+/*------------section 2---------------*/
+#section2
+{	
+	width: 100%;
+	padding: 35%;
+	height: 0;
+	
+	position: relative;
+	background: #FCF4E6;
 	
 }
+#container_2
+{
+	width: 60%;
+	padding-bottom: 39%;
+	height: 0;
+	position: absolute;
+	left: 20%;
+	top: 15%;
+/*	background: #545770;*/
+}
+#People_2
+{
+	width: 35%;
+	position: absolute;
+	left: 7%;
+	top: 0;
+	/*background: #B84D4F;*/
+}
+#illustration
+{
+	width: 100%;
+	padding-bottom: 62%;
+	height: 0;
+	margin-top: 16%;
+	/*background: #728F80;*/
+	position: relative;
+}
+#myCarousel
+{
+	position: absolute;
+	border-style: solid;
+    border-width: 8px;
+	border-radius: 4px;
+	border-color: #FFA9BF;
+}
+
+
+/*------------section 2---------------*/
