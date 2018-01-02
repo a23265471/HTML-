@@ -265,13 +265,13 @@ body
 {
 	height: auto;
 	width: 100%;
-	
+	background: #FFFFFF;
 }
 #Contain_3
 {
 	height: auto;
 	width: 100%;
-	background: #FFFFFF;
+	
 }
 .top
 {
@@ -303,7 +303,7 @@ body
 	text-align: justify;
 	/*background: #E09E9F;*/
 }
-.LeftContain h ,.RightContain h,.charactorInstration
+.LeftContain h ,.RightContain h,.character_Instration
 {
 	font-family: 微軟正黑體;
 	font-weight: bold;
@@ -426,15 +426,15 @@ body
 {
 	height: auto;
 	width: 100%;
-	
+	background: #FFFFFF;
 }
 #Contain_4
 {
 	height: auto;
 	width: 100%;
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
 }
-#title4
+.title4
 {
 	margin-left: 5%;
 	font-family: 微軟正黑體;
@@ -442,7 +442,7 @@ body
 	color: #813260;
 	font-size: 3vw;
 }
-#myCarousel4,#myCarousel5
+#myCarousela,#myCarousel5
 {
 	margin: 5% auto;
 }
@@ -459,15 +459,15 @@ body
 {
 	height: auto;
 	width: 100%;
-	
+	background: #FFFFFF;
 }
 #Contain_5
 {
 	height: auto;
 	width: 100%;
-	background: #FFFFFF;
+	
 }
-#title5
+.title5
 {
 	
 	margin-left: 5%;
@@ -512,3 +512,4 @@ body
 }
 
 /*------------section 6---------------*/
+
