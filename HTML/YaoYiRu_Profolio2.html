@@ -30,10 +30,67 @@
 		Design.style.opacity=1;
 	}
 	
+	function GoToSection(GotoSection)
+	{
+		if(GotoSection==6)
+		{
+			window.location.href='index.html'
+		}
+		else
+		window.location.href = '#section'+GotoSection;
+	}
+	function CataloSlide()
+	{
+		var CatalogContain=document.getElementById("Catalog_contain");
+		if(CatalogContain.style.left=="65%")
+		{
+			CatalogContain.style.left="0"
+		}
+		else
+		{
+			CatalogContain.style.left="65%";
+		}
+	}
+	
+	
 </script>
 <!-----HTML ----->
 
 
+<div id="Catalog">
+
+	<div id="About_me_tag"><img src="s1410422014/資產 13.png" class="img-responsive" onclick="GoToSection(1);"></div>
+	
+	<div id="Catalog_contain" >
+		<div id="Catalog_contain_Left">
+			<div class="Catalog_Button_Border">
+				<div class="Catalog_Button_BG" onclick="GoToSection(6);CataloSlide();">	
+					<p>Home</p>
+							
+				</div>
+				<div class="Catalog_Button_BG" onclick="GoToSection(2);CataloSlide();">	
+					<p>illustration</p>
+							
+				</div>
+				<div class="Catalog_Button_BG" onclick="GoToSection(3);CataloSlide();">	
+					<p>Puppet Animation</p>
+						
+				</div>
+				<div class="Catalog_Button_BG" onclick="GoToSection(4);CataloSlide();">	
+					<p>Screen Writing</p>
+						
+				</div>
+				<div class="Catalog_Button_BG" onclick="GoToSection(5);CataloSlide();">	
+					<p>ZOE</p>
+						
+				</div>
+			</div>
+		</div>
+			<div id="Catalog_tag"><img src="s1410422014/資產 14.png" class="img-responsive" onclick="CataloSlide();" ></div>		
+	</div>
+
+	
+</div>
 
 
 <div id="section1" > 
