@@ -22,14 +22,14 @@ body
 	cursor: pointer;
 	
 	font-family: Impact;
-	font-size: 1.8vw;
+	font-size: 1.8em;
 	
 }
 .NavBar_list
 {
 	font-family: Arial;
 	font-weight: bold;
-	font-size: 1.3vw;
+	font-size: 1.1em;
 	line-height: 1.8;
 	
 }
@@ -129,7 +129,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color:  #73417D;
-	font-size: 0.9em;
+	font-size: 0.91em;
 	
 }
 #Introduction_Me p
@@ -137,7 +137,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #89608B;
-	font-size: 0.9vw;
+	font-size: 0.9em;
 	line-height: 1.8;
 	
 }
@@ -163,7 +163,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #89608B;
-	font-size: 0.8em;
+	font-size: 0.85em;
 	line-height: 1.8;
 }
 
@@ -238,7 +238,7 @@ body
 .Subject h
 {
 	font-family: 微軟正黑體;
-	font-size: 1.2vw;
+	font-size: 0.9em;
 	font-weight: bold;
 	color: #89608B;
 }
@@ -263,7 +263,7 @@ body
 .score_math h
 {	
 	font-family: 微軟正黑體;
-	font-size: 1.2vw;
+	font-size: 0.9em;
 	font-weight: bold;
 	color: #CD7192;
 }
@@ -350,7 +350,7 @@ body
 	
 	font-family: Impact;
 	color: #CE8AA4;
-	font-size: 3vw;
+	font-size: 2em;
 }
 
 .MainContain
@@ -373,7 +373,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #876588;
-	font-size: 1.5vw;
+	font-size: 1.1em;
 	line-height: 1.8;
 	word-spacing: 3px;
 	margin-left: 10%;
@@ -385,7 +385,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #7F7795;
-	font-size: 1.2vw;
+	font-size: 1em;
 	line-height: 1.8;
 	word-spacing: 3px;
 	margin-left: 10%;
@@ -425,7 +425,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #CE8BA5;
-	font-size: 1.8vw;
+	font-size: 1.3em;
 	word-spacing: 3px;
 	text-align: center;
 	
@@ -509,7 +509,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #813260;
-	font-size: 3vw;
+	font-size: 1.4em;
 }
 .title5, .title4, #title3, .title6
 {
@@ -576,7 +576,7 @@ body
 	font-family: Impact;
 	font-weight: bold;
 	color: #973D4B;
-	font-size: 3vw;
+	font-size: 2em;
 }
 .title6 p2
 {
@@ -584,7 +584,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #973D4B;
-	font-size: 1.5vw;
+	font-size: 0.9em;
 	margin-left: 3%;
 	
 }
