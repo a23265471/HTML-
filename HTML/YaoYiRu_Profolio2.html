@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 </head>
 
 <body>
@@ -18,21 +19,28 @@
 	{
 		var APP=document.getElementById("APP_Score");
 		var Design=document.getElementById("Design_Score");
-		APP.style.opacity=1;
-		Design.style.opacity=0;
-			
+		var APP_Button=document.getElementById("Application");
+		var Design_Button=document.getElementById("Design");
+		APP.style.display="block";
+		Design.style.display="none";
+		APP_Button.style.filter="hue-rotate(242deg)";
+		Design_Button.style.filter="hue-rotate(0deg)";
 	}
 	function Change_Design()
 	{
 		var APP=document.getElementById("APP_Score");
 		var Design=document.getElementById("Design_Score");
-		APP.style.opacity=0;
-		Design.style.opacity=1;
+		var APP_Button=document.getElementById("Application");
+		var Design_Button=document.getElementById("Design");
+		APP.style.display="none";
+		Design.style.display="block";
+		APP_Button.style.filter="hue-rotate(0deg)";
+		Design_Button.style.filter="hue-rotate(242deg)";
 	}
 	
 	function GoToSection(GotoSection)
 	{
-		if(GotoSection==6)
+		if(GotoSection>6)
 		{
 			window.location.href='index.html'
 		}
@@ -42,58 +50,87 @@
 	function CataloSlide()
 	{
 		var CatalogContain=document.getElementById("Catalog_contain");
+		var closetab=document.getElementById("closetab");
 		if(CatalogContain.style.left=="65%")
 		{
 			CatalogContain.style.left="0"
+			closetab.style.display="none";
 		}
 		else
 		{
-			CatalogContain.style.left="65%";
+			CatalogContain.style.left="65%"
+			closetab.style.display="block";
 		}
 	}
-	
-	
+	function closetab()
+	{	
+		var CatalogContain=document.getElementById("Catalog_contain");
+		var closetab=document.getElementById("closetab");
+		if(CatalogContain.style.left=="65%")
+		{
+			CatalogContain.style.left="0"
+			closetab.style.display="none";
+		}
+	}
+	var click_count=0;
+	function Mobile_Button_list()
+	{
+		var Mobile_List_Button=document.getElementById("Mobile_List_Button");
+		if(click_count==0)
+		{
+			Mobile_List_Button.style.background="#E283BC";
+			click_count=1;
+		}
+		else
+		{
+			Mobile_List_Button.style.background="#FB90C0";
+			click_count=0;
+		}
+	}
+
+
 </script>
 <!-----HTML ----->
 
+ <nav class="navbar-inverse navbar-fixed-top" style="background: #FDB2C8;">
+	<div class="container-fluid" style="background: #FDB2C8;">
+    <div class="navbar-header NavBar_Mobile" >
+      <button type="button" class="navbar-toggle" id="Mobile_List_Button" data-toggle="collapse" data-target="#myNavbar" onClick="Mobile_Button_list()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+      </button>
+		<a class="navbar-brand " id="NavBar_icon" href="#" style="color: #CC82B4;">Resume</a>
+    </div>
+    <div class="collapse navbar-collapse NavBar_Web" id="myNavbar" >
+      <ul class="nav navbar-nav">
+		<li><a class="NavBar_list" href="index.html" style="color: #CC82B4;">Home</a></li>
+        <li><a class="NavBar_list" href="#Contain_1" style="color: #CC82B4;">About me</a></li>
+        <li><a class="NavBar_list" href="#section2" style="color: #CC82B4;">illustration</a></li>
+		<li><a class="NavBar_list" href="#section3" style="color: #CC82B4;">Puppet Animation</a></li>
+		<li><a class="NavBar_list" href="#section4" style="color: #CC82B4;">Screen Write</a></li>
+		
+		<li class="dropdown" style="height: 50px;">
+    		<a class="dropdown-toggle NavBar_list" id="Web_dropdown_Button" data-toggle="dropdown" style="color: #CC82B4;">Topic
+				<span class="caret"></span></a>
+   			<ul class="dropdown-menu" id="dropdown_menu" >
+      		<li><a id="Mobile_Topic_list1" href="#section5" >吻仔魚闖天下</a></li>
+      		<li><a id="Mobile_Topic_list2" href="#section6" >ZOE /2017 K.T.科藝獎-入圍</a></li>
+      		</ul>
+  		</li>
 
-<div id="Catalog">
-
-	<div id="About_me_tag"><img src="s1410422014/資產 13.png" class="img-responsive" onclick="GoToSection(1);"></div>
-	
-	<div id="Catalog_contain" >
-		<div id="Catalog_contain_Left">
-			<div class="Catalog_Button_Border">
-				<div class="Catalog_Button_BG" onclick="GoToSection(6);CataloSlide();">	
-					<p>Home</p>
-							
-				</div>
-				<div class="Catalog_Button_BG" onclick="GoToSection(2);CataloSlide();">	
-					<p>illustration</p>
-							
-				</div>
-				<div class="Catalog_Button_BG" onclick="GoToSection(3);CataloSlide();">	
-					<p>Puppet Animation</p>
-						
-				</div>
-				<div class="Catalog_Button_BG" onclick="GoToSection(4);CataloSlide();">	
-					<p>Screen Writing</p>
-						
-				</div>
-				<div class="Catalog_Button_BG" onclick="GoToSection(5);CataloSlide();">	
-					<p>ZOE</p>
-						
-				</div>
-			</div>
-		</div>
-			<div id="Catalog_tag"><img src="s1410422014/資產 14.png" class="img-responsive" onclick="CataloSlide();" ></div>		
+      </ul>
+    </div>
 	</div>
-
+</nav> 	
 	
-</div>
+
+<!------------------------------------------------------>	
+
 
 
 <div id="section1" > 
+
 	<div id="Contain_1">
 		<div id="Container_1" class="container-fluid">
 		
@@ -106,7 +143,7 @@
 					</div>
 				<div id="School">
 					<h>Experience</h>
-					<p>國立臺中高級工業職業學校   電子科<br>國立臺中科技大學   多媒體設計系</p>
+					<p>國立臺中科技大學   多媒體設計系<br>國立臺中高級工業職業學校   電子科</p>
 				</div>
 			</div>
 <!-- -------------------------SKill-------------------------------->							
@@ -121,23 +158,33 @@
 				<div id="Design_Score">	
 				<div class="Score_bar">
 					<div class="Subject"><h>illustrator</h></div>
-					<div class="Score_img"><img src="s1410422014/P2/Score_4.5.png" class="img-responsive"></div>
-					<div class="score_math"><h>4.5</h></div>		
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.0</h></div>		
 				</div>	
 				<div class="Score_bar">
 					<div class="Subject"><h>photoshop</h></div>
-					<div class="Score_img"><img src="s1410422014/P2/Score_3.5.png" class="img-responsive"></div>
-					<div class="score_math"><h>3.5</h></div>		
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.0</h></div>		
 				</div>		
 				<div class="Score_bar">
 					<div class="Subject"><h>premiere</h></div>
 					<div class="Score_img"><img src="s1410422014/P2/Score_3.png" class="img-responsive"></div>
-					<div class="score_math"><h>3</h></div>		
+					<div class="score_math"><h>3.0</h></div>		
 				</div>
 				<div class="Score_bar">
 					<div class="Subject"><h>lightroom</h></div>
 					<div class="Score_img"><img src="s1410422014/P2/Score_3.5.png" class="img-responsive"></div>
 					<div class="score_math"><h>3.5</h></div>		
+				</div>	
+					<div class="Score_bar" style="opacity: 0;">
+					<div class="Subject"><h>CSS</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.0</h></div>		
+				</div>		
+					<div class="Score_bar" style="opacity: 0;">
+					<div class="Subject"><h>CSS</h></div>
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.0</h></div>		
 				</div>		
 				</div>	
 <!-- ---------------Design Score------------ -->				
@@ -145,33 +192,33 @@
 				<div id="APP_Score">	
 				<div class="Score_bar">
 					<div class="Subject"><h>C++</h></div>
-					<div class="Score_img"><img src="s1410422014/P2/Score_4.5.png" class="img-responsive"></div>
-					<div class="score_math"><h>4.5</h></div>		
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.0</h></div>		
 				</div>	
 				<div class="Score_bar">
 					<div class="Subject"><h>C#</h></div>
-					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
-					<div class="score_math"><h>4.0</h></div>		
+					<div class="Score_img"><img src="s1410422014/P2/Score_3.5.png" class="img-responsive"></div>
+					<div class="score_math"><h>3.5</h></div>		
 				</div>		
 				<div class="Score_bar">
 					<div class="Subject"><h>Javascript</h></div>
-					<div class="Score_img"><img src="s1410422014/P2/Score_3.png" class="img-responsive"></div>
-					<div class="score_math"><h>3.0</h></div>		
+					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
+					<div class="score_math"><h>4.0</h></div>		
 				</div>
 				<div class="Score_bar">
 					<div class="Subject"><h>HTML</h></div>
 					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
-					<div class="score_math"><h>4</h></div>		
+					<div class="score_math"><h>4.0</h></div>		
 				</div>
 				<div class="Score_bar">
 					<div class="Subject"><h>CSS</h></div>
 					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
-					<div class="score_math"><h>4</h></div>		
+					<div class="score_math"><h>4.0</h></div>		
 				</div>		
 				<div class="Score_bar">
 					<div class="Subject"><h>Unity</h></div>
-					<div class="Score_img"><img src="s1410422014/P2/Score_4.png" class="img-responsive"></div>
-					<div class="score_math"><h>4</h></div>		
+					<div class="Score_img"><img src="s1410422014/P2/Score_3.5.png" class="img-responsive"></div>
+					<div class="score_math"><h>3.5</h></div>		
 				</div>		
 				</div>	
 				
@@ -189,20 +236,23 @@
 		
 </div>
 
+	
+<!------------------------------------section 2 ---------------------------------------------------->
 <div id="section2">
+
 	<div id="container_2">
-		<div id="illustration">
+		
 <!--------------------BOOSTRAPT-------------------------->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
    			 <!-- Indicators -->
-    <ol class="carousel-indicators">
+  <!--  <ol class="carousel-indicators ">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
       <li data-target="#myCarousel" data-slide-to="5"></li>
-    </ol>
+    </ol> -->
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
@@ -224,25 +274,26 @@
       </div>
       <div class="item">
         <img src="s1410422014/資產 6new.png" style="width:100%;" class="img-responsive">
-      </div>
+      
     </div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
     </a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>
-<!--------------------BOOSTRAPT-------------------------->		
-			
-			
+<!--------------------BOOSTRAPT-------------------------->			
 		</div>
 		<div id="People_2"><img src="s1410422014/P2/資產 26new.png" class="img-responsive"></div>	
-	</div>
-	
-			
+	</div>		
 </div>
+<!------------------------------------section 2 ---------------------------------------------------->
+<!------------------------------------section 3 ---------------------------------------------------->
 <div id="section3">
+
 	<div id="Contain_3">
 	<div class="top"></div>
 		<div class="Peoples"><img src="s1410422014/P2/資產 27new.png" class="img-responsive"></div>
@@ -252,31 +303,16 @@
 				<div class="row">
 					<div class="col-sm-6 LeftContain">
 						
-							<h>成員/ 姚怡如 游雅婷 簡家芝<br></h><h>指導老師/ 游曉貞 蔡子瑋<br></h><h>工作分配/</h>
+							<h>成員/ 姚怡如 游雅婷 簡嘉芝<br></h><h>指導老師/ 游曉貞 蔡子瑋<br></h><h>工作分配/</h>
 							<p>戲偶-柯基 老鼠/ 姚怡如<br>戲偶-哈密瓜 草莓 炸蝦/ 游雅婷 簡家芝
-							<br>場景佈置/姚怡如 游雅婷 簡家芝<br>美術插圖/姚怡如
-							<br>攝影/姚怡如 游雅婷 簡家芝<br>影片後製/ 游雅婷 簡家芝
+							<br>場景佈置/ 姚怡如 游雅婷 簡家芝<br>美術插圖/ 姚怡如
+							<br>攝影/ 姚怡如 游雅婷 簡家芝<br>影片後製/ 游雅婷 簡家芝
 						</p>		
 					</div>
 					<div class="col-sm-6 RightContain">
 						<div>
 							<h>目標觀眾/ 學齡前兒童<br><br></h><h>劇情簡介/</h>
-							<p>有一隻柯基為了想交朋友,而來到了一條商店街
-								,一開始遇到炸蝦先生,狗狗交到了 第一個朋友
-								,但炸蝦先生必須留在櫥窗哩,無法跟狗狗一起走
-								,於是柯基又回到孤獨的世界,走著走著,遇到了
-								哈密瓜先生和草莓小姐,狗狗熱情地向前問:「我
-								可以跟你們一起玩嗎？」，自視甚高的哈密瓜先
-								生與草莓小姐認為狗狗沒有資格跟他們玩笑說：
-								你有甚麼資格？」，狗狗傷心地走掉了，來到
-								了一條小巷子，突然有垃圾掉下來，抬頭一看，
-								原來是一隻老鼠，原本傷心難過的狗狗再度提體
-								勇氣，問說：「你願意跟我當朋友嗎？」，老鼠
-								看了看自己，說：「可是我這麼髒．．．」，但
-								狗狗一點也不介意，因為狗狗認為交朋是要用真
-								心來交的，而不是只看外表，在狗狗熱情下，老
-								鼠卸下了心防，跟他當了朋友，並開心地離開了
-								商店街。
+							<p>有一隻柯基為了想交朋友，而來到了一條商店街，一開始遇到炸蝦先生，狗狗交到了第一個朋友，但炸蝦先生必須留在櫥窗哩，無法跟狗狗一起走，於是柯基又回到孤獨的世界，走著走著，遇到了哈密瓜先生和草莓小姐，狗狗熱情地向前問:「我可以跟你們一起玩嗎？」，自視甚高的哈密瓜先生與草莓小姐認為狗狗沒有資格跟他們玩笑說：你有甚麼資格？」，狗狗傷心地走掉了，來到了一條小巷子，突然有垃圾掉下來，抬頭一看，原來是一隻老鼠，原本傷心難過的狗狗再度提體勇氣，問說：「你願意跟我當朋友嗎？」，老鼠看了看自己，說：「可是我這麼髒．．．」，但狗狗一點也不介意，因為狗狗認為交朋是要用真心來交的，而不是只看外表，在狗狗熱情下，老鼠卸下了心防，跟他當了朋友，並開心地離開了商店街。
 							</p>
 						</div>
 					</div>
@@ -296,11 +332,12 @@
 			</div>	
 			</div>
 			
-			
 		</div>
 		
 	</div>
 </div>
+<!------------------------------------section 3 ---------------------------------------------------->
+<!------------------------------------section 4 ---------------------------------------------------->
 <div id="section4">
 	<div id="Contain_4">
 	<div class="top"></div>
@@ -319,12 +356,7 @@
 					<div class="col-sm-6 RightContain">
 						<div>
 							<h>目標觀眾/ 青年<br><br></h><h>劇情簡介/</h>
-							<p>本故事在探討人性的黑暗面，以及每件事都有它的代價，就在
-								男主角轉學的第二天，班上有幾位同學相約一起去山上的一間
-								小廟祈願，聽說只要許願並支付代價，願望就會實現，但人是
-								是此的貪婪與醜陋，不惜付出任何代價都要滿足自己的慾望，
-								但要是＂代價＂和＂慾望＂是不對等的，將會發生不可收拾的
-								後果。　
+							<p>本故事在探討人性的黑暗面，以及每件事都有它的代價，就在男主角轉學的第二天，班上有幾位同學相約一起去山上的一間小廟祈願，聽說只要許願並支付代價，願望就會實現，但人心是此的貪婪與醜陋，不惜付出任何代價都要滿足自己的慾望，但要是＂代價＂和＂慾望＂是不對等的，將會發生不可收拾的後果。　
 							</p>
 						</div>
 					</div>
@@ -334,42 +366,44 @@
 			<!--------------------BOOSTRAPT-------------------------->
 	<div id="myCarousela" class="carousel slide" data-ride="carousel">
    			 <!-- Indicators -->
-    <ol class="carousel-indicators">
+  <!--  <ol class="carousel-indicators">
       <li data-target="#myCarousela" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousela" data-slide-to="1"></li>
       <li data-target="#myCarousela" data-slide-to="2"></li>
       <li data-target="#myCarousela" data-slide-to="3"></li>
       <li data-target="#myCarousela" data-slide-to="4"></li>
       <li data-target="#myCarousela" data-slide-to="5"></li>
-    </ol>
+    </ol> -->
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="s1410422014/P2/資產 10hh1.png" style="width:100%;" class="img-responsive">
+        <img src="s1410422014/P2/資產 10hh1.jpg" style="width:100%;" class="img-responsive">
       </div>
 
       <div class="item">
-        <img src="s1410422014/P2/資產 11hh1.png" style="width:100%;" class="img-responsive">
+        <img src="s1410422014/P2/資產 11hh1.jpg" style="width:100%;" class="img-responsive">
       </div>
     
       <div class="item">
-        <img src="s1410422014/P2/資產 12hh1.png" style="width:100%;" class="img-responsive">
+        <img src="s1410422014/P2/資產 12hh1.jpg" style="width:100%;" class="img-responsive">
       </div>
       <div class="item">
-        <img src="s1410422014/P2/資產 13hh1.png" style="width:100%;" class="img-responsive">
+        <img src="s1410422014/P2/資產 13hh1.jpg" style="width:100%;" class="img-responsive">
       </div>
       <div class="item">
-        <img src="s1410422014/P2/資產 14hh1.png" style="width:100%;" class="img-responsive">
+        <img src="s1410422014/P2/資產 14hh1.jpg" style="width:100%;" class="img-responsive">
       </div>
       <div class="item">
-        <img src="s1410422014/P2/資產 15hh1.png" style="width:100%;" class="img-responsive">
+        <img src="s1410422014/P2/資產 15hh1.jpg" style="width:100%;" class="img-responsive">
       </div>
     </div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousela" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
     </a>
     <a class="right carousel-control" href="#myCarousela" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>
 <!--------------------BOOSTRAPT-------------------------->		
@@ -383,13 +417,66 @@
 		
 	</div>
 </div>
+<!------------------------------------section 4 ---------------------------------------------------->
+<!------------------------------------section 5 ---------------------------------------------------->
 <div id="section5">
 	<div id="Contain_5">
 	<div class="top"></div>
 		<div class="Peoples"><img src="s1410422014/P2/資產 29new.png" class="img-responsive"></div>
 		<div id="container_5">
 			<div class="MainContain container-fluid MainContain4">
-				<div class="title5"><h>ZOE</h></div>
+				<div class="title5"><h>吻仔魚闖天下</h></div>
+				<div class="row">
+					<div class="col-sm-6 LeftContain LeftContain_4">
+						
+						<h>成員/  姚怡如 賴怡瑄 游雅婷<br><br></h>
+							<h>工作分配/</h>
+							<p>程式編寫/  姚怡如<br>劇情發想/  姚怡如 賴怡瑄 游雅婷
+							<br>人物 怪物設計/  姚怡如 賴怡瑄 游雅婷<br>美術-人魚/  姚怡如 賴怡瑄<br>美術-怪物/  姚怡如<br>
+							美術-背景/  賴怡瑄<br>音效/  賴怡瑄 游雅婷<br><br></p>	
+							
+							
+					</div>
+					<div class="col-sm-6 RightContain">
+						<div>
+							<h>劇情簡介/</h>
+							<p>在黑暗的深海中，有一條平凡的小魚－吻仔魚，渴望成為像人魚公主那樣漂亮的美人魚，還能浮上海面看看陸地上的世界，所以他開始了屬於他的冒險歷程……。<br><br>
+							</p>
+							<h>遊戲玩法/</h>	
+							<p>直向動作闖關遊戲，用跳躍的方式向上移動，並關卡途中設有
+								障礙物，每過特定關卡角色便會進化，直到最後變成美人魚遊
+								戲就結束 
+								<br>
+							</p>
+							
+						</div>
+					</div>
+				</div>
+				<h class="character_Instration">腳色介紹 / 人魚公主  </h>	
+				<img src="s1410422014/P2/資產 8.png" class="img-responsive" style="width:60%;margin: 3% auto 5% auto;">
+				<h class="character_Instration">怪物介紹 /   </h>	
+				<img src="s1410422014/P2/資產 9.png" class="img-responsive" style="width:85%;margin: 3% auto 5% auto;">
+				
+    			<h class="character_Instration">遊戲畫面 /   </h>
+  				<img src="s1410422014/P2/資產 10.png" class="img-responsive" style="width:85%;margin: 3% auto 5% auto;">
+			
+    			
+			
+   		
+			</div>		
+		</div>
+		
+	</div>
+</div>
+<!------------------------------------section 5 ---------------------------------------------------->
+<!------------------------------------section 6 ---------------------------------------------------->
+<div id="section6">
+	<div id="Contain_6">
+	<div class="top"></div>
+		<div class="Peoples"><img src="s1410422014/P2/資產 29new.png" class="img-responsive"></div>
+		<div id="container_6">
+			<div class="MainContain container-fluid MainContain4">
+				<div class="title6"><p1>ZOE</p1><p2>/2017 K.T.科藝獎-入圍 (數位遊戲組)</p2></div>
 				<div class="row">
 					<div class="col-sm-6 LeftContain LeftContain_4">
 						
@@ -397,7 +484,7 @@
 							<h>工作分配/</h>
 							<p>動畫/  郭佳琳 張雅欣 葉姿萱<br>背景/  郭佳琳
 							<br>人物 怪物設計/  張雅欣<br>UI設計/  葉姿萱<br>道具 障礙物設計/  葉姿萱<br>
-							遊戲主程式/  姚怡如<br>關卡配置/  姚怡如<br>商店系統/  林欣慧<br>神塔系統/  林欣慧<br><br></p>	
+							遊戲主程式/  姚怡如<br>關卡配置/  姚怡如<br>商店系統/  林欣慧 簡嘉芝<br>神塔系統/  簡嘉芝<br><br></p>	
 							<h>遊戲玩法</h>	
 							<p>此遊戲是一款結合了收集的2D 平面的跑酷遊戲，讓玩
 								家能體驗到非以往單純跑酷或是收集遊戲。 
@@ -409,39 +496,32 @@
 					<div class="col-sm-6 RightContain">
 						<div>
 							<h>劇情簡介/</h>
-							<p>姆姆特島上有一個小村莊，叫做多多利，生存在森林、沙
-								漠、冰原之間的小平原，一直以來都依靠著神塔上的生命寶石
-								生活這是一顆神祕的寶石，它能讓三個完全不同氣候、地形的
-								地域同時存於一個環境，多多利的人民相當尊敬這顆帶給他們
-								豐饒的石頭，對他們來說這顆散發光芒的石頭就是他們的神祇
-								，並替它名為ZOE多多利的人民習慣向ZOE 傾訴煩心、鬱結的心事，在他們
-								認為ZOE 是無所不能的，只要向它傾吐，就能感到輕鬆並且放
-								下，而ZOE 也實現他們的願望，吸收這些負面的能量，長久之
-								後它感到相當疲累，大量的負面情緒影響它延續生命的運行，
-								而變得越來越虛弱。有天，少年雅戴爾，在向ZOE傾訴煩惱時，成了壓垮ZOE
-								最後一根稻草的人，最終ZOE徹底崩潰，破壞了世界的平衡，
-								動物開始變的兇殘、農作物枯萎、村民們開始互相爭鬥，不知
-								所措的雅戴爾本能的跑到ZOE的神塔，雅戴爾非常的悲痛，這
-								時一陣天搖地動，雅戴爾抬頭一看，發現一塊巨石上刻著復原
-								ZOE的方法，便是從森林、沙漠、冰原這三個地區中蒐集足夠
-								的陽光元素、空氣元素以及水元素，讓ZOE 有足夠的能量排出
-								體內的汙穢，進而復原。
+							<p>姆姆特島上有一個小村莊，叫做多多利，生存在森林、沙漠、冰原之間的小平原，一直以來都依靠著神塔上的生命寶石生活這是一顆神祕的寶石，它能讓三個完全不同氣候、地形的地域同時存於一個環境，多多利的人民相當尊敬這顆帶給他們豐饒的石頭，對他們來說這顆散發光芒的石頭就是他們的神祇，並替它名為ZOE多多利的人民習慣向ZOE 傾訴煩心、鬱結的心事，在他們認為ZOE 是無所不能的，只要向它傾吐，就能感到輕鬆並且放下，而ZOE 也實現他們的願望，吸收這些負面的能量，長久之後它感到相當疲累，大量的負面情緒影響它延續生命的運行，而變得越來越虛弱。有天，少年雅戴爾，在向ZOE傾訴煩惱時，成了壓垮ZOE最後一根稻草的人，最終ZOE徹底崩潰，破壞了世界的平衡，動物開始變的兇殘、農作物枯萎、村民們開始互相爭鬥，不知所措的雅戴爾本能的跑到ZOE的神塔，雅戴爾非常的悲痛，這時一陣天搖地動，雅戴爾抬頭一看，發現一塊巨石上刻著復原ZOE的方法，便是從森林、沙漠、冰原這三個地區中蒐集足夠的陽光元素、空氣元素以及水元素，讓ZOE 有足夠的能量排出體內的汙穢，進而復原。
 							</p>
 						</div>
 					</div>
 				</div>
 				<h class="character_Instration">腳色介紹 / 雅戴爾  </h>	
 				<img src="s1410422014/P2/資產 39new1.png" class="img-responsive" style="width:60%;margin: 0 auto;">
-			<div id="myCarousel5" class="carousel slide" data-ride="carousel">
+				<h class="character_Instration">怪物介紹 /   </h>	
+				<img src="s1410422014/P2/資產 7.png" class="img-responsive" style="width:90%;margin: 0 auto;">
+				
+    			<h class="character_Instration">遊戲簡介 /   </h>
+  				<div class="embed-responsive embed-responsive-16by9 Type_Video">
+    			<iframe width="100%" src="https://www.youtube.com/embed/3_5qIBreaZ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  				</div>
+			
+    			
+			<div id="myCarousel6" class="carousel slide" data-ride="carousel">
    			 <!-- Indicators -->
-    <ol class="carousel-indicators">
+ <!--   <ol class="carousel-indicators">
       <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel5" data-slide-to="1"></li>
       <li data-target="#myCarousel5" data-slide-to="2"></li>
       <li data-target="#myCarousel5" data-slide-to="3"></li>
       <li data-target="#myCarousel5" data-slide-to="4"></li>
       <li data-target="#myCarousel5" data-slide-to="5"></li>
-    </ol>
+    </ol> -->
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
@@ -467,23 +547,26 @@
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel5" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel6" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right carousel-control" href="#myCarousel5" data-slide="next">
+    <a class="right carousel-control" href="#myCarousel6" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
     </a>
-  </div>
-			
-			</div>
-			
-			
+  </div>		
+			</div>		
 		</div>
 		
 	</div>
 </div>
-<div id="section6">
-	<img src="s1410422014/P2/資產 26.png"  class="img-responsive" style="width:100%;" >
-	<div id="footer"><h>Name:Yao, Yi-R    0939-984321</h></div>
 	
+	
+	
+<!------------------------------------section 6 ---------------------------------------------------->
+<!------------------------------------  Footer ---------------------------------------------------->
+<div id="Footer">
+	<img src="s1410422014/P2/資產 26.png"  class="img-responsive" style="width:100%;" >
+	<div id="footer"><h>Name&nbsp;:&nbsp;Yao,Yi-Ru&nbsp;&nbsp;&nbsp;0939-984321&nbsp;&nbsp;&nbsp;a23265471@gmail.com</h></div>
 </div>
 </body>
 </html> 

@@ -10,120 +10,91 @@ body
 	width: 100%;
 	height: 100%;
 }
-
-#Catalog
+.NavBar_Web
 {
-	z-index: 10;
-	position: fixed;
-	margin-top: 20%;
-	margin-left: -22%;
-	
-	/*background: #E00567;*/
-	width: 35%;
-	height: auto;
-}
-#About_me_tag
-{ 
-	margin-left: 60%;
-}
-
-#About_me_tag:hover
-{
-	filter: hue-rotate(340deg);
-}
-
-
-#Catalog img:hover
-{
-	filter: hue-rotate(340deg);
-	
-}
-#Catalog_contain
-{
-	width: 100%;
-	margin-top: 2%;
-	position: relative;
-	left:0%;
-	/*background: #975455;*/
-	transition: left 300ms ease-out;
-	
-}
-#Catalog_tag
-{
-	width: 40%;
-	
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-#Catalog_contain_Left
-{
-	width: 55%;
-	height: auto;
-	padding: 1.2% 0;
 	background: #FDB2C8;
-	
 }
-
-.Catalog_Button_Border
+#NavBar_icon
 {
-	width: 95%;
-	
-	height: auto;
-	margin: auto auto;
-	/*background: #FDB2C8;*/
-	border: 3px solid #FDF7DD;	
-}
-
-.Catalog_Button_BG
-{
-	width: 100%;
-	margin: 0 auto;
-	padding: 3% 0;
-	height: auto;
 	background: #FDB2C8;
-	/*background: #E588BB;*/
+	height: 100%;
+	border-style: none;
+	cursor: pointer;
 	
-}
-.Catalog_Button_BG:hover
-{
-	background: #E588BB;
-}
-
-.Catalog_Button_BG p
-{
 	font-family: Impact;
-	text-align: center;
-	line-height: 1.8;
-	color:  #FFFCF5;
 	font-size: 1.8vw;
+	
+}
+.NavBar_list
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1.3vw;
+	line-height: 1.8;
+	
 }
 
+.NavBar_Mobile
+{
+	background: #FDB2C8;
+	
+}
+#Mobile_List_Button
+{
+	background: #FB90C0;
+	border-style: none;
+}
+
+#Web_dropdown_Button
+{
+	background: #FDB2C8;
+	height: 100%;
+	border-style: none;
+	cursor: pointer;
+	
+}
+#dropdown_menu
+{
+	background: #FFE4E3;
+}
+#Mobile_Topic_list1,#Mobile_Topic_list2
+{
+	color: #CC82B4; 
+	height: 40px; 
+	line-height: 40px;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	word-spacing: 5px;
+	
+}
 
 /*-------------section1----------------*/
 #section1
 {
-	background: url("s1410422014/P2/資產 9new.png") 50% 0 no-repeat fixed;
+	background: url("s1410422014/P2/資產 9new.png") 50% 50px no-repeat fixed;
+	
 	background-size: cover;
 	margin: 0;
-    padding: 200px 0 200px 0;
+    padding: 20% 0 0 0;
 	width: 100%;
-	height: 150%;
-	position: relative;
+	/*height: 150%;*/
+	/*position: relative;*/
 }
+
 #Contain_1
 {
-	position: absolute;
+	/*position: absolute;*/
 	background: #FFFFF8;
 	width: 100%;
-	height: 60.5%;
-	top:40%;
+	/*height: 60.5%;*/
+	margin-top: 20%;
+	/*top:40%;*/
 }
 #Container_1
 {
 	position: relative;
 	width: 75%;
-	height: 100%;
+	padding-bottom: 5%;
 	margin: 0 auto;
 	
 	/*background: #B16F6F;*/
@@ -214,38 +185,39 @@ body
 #Application
 {
 	width: 29%;
-	float: left;	
+	float: left;
+	cursor: pointer;
+	filter: hue-rotate(242deg);
 }
 #Design
 {
 	margin-left: 35%;
 	width: 20%;
-}
-#Application:hover,#Design:hover
-{
-	filter: hue-rotate(260deg);
+	cursor: pointer;
 }
 
 #Score_Design_APP
 {
 	width: 100%;
+	padding-bottom: 15%;
 	/*background: #466B98;*/
-	position: relative;
+	/*position: relative;*/
 }
 
 #Design_Score
 {
 	width: 100%;
 	/*background: #108E70;*/
-	position: absolute;
+	/*position: absolute;*/
 	margin-top: 5%;
-	opacity: 0;	
+	
+	display: none;
 }
 #APP_Score
 {
 	width: 100%;
 	/*background: #7B4C8E;*/
-	position: absolute;
+	/*position: absolute;*/
 	margin-top: 5%;
 	opacity: 1;
 }
@@ -300,48 +272,46 @@ body
 /*------------section 2---------------*/
 #section2
 {	
-	width: 100%;
-	padding: 35%;
-	height: 0;
+	width: 100%;	
+	height: auto;	
+	padding: 15% 0;
 	
-	position: relative;
 	background: #FCF4E6;
 	
 }
 #container_2
 {
 	width: 60%;
-	padding-bottom: 39%;
-	height: 0;
-	position: absolute;
-	left: 20%;
-	top: 13%;
-/*	background: #545770;*/
+	margin: auto;
+	
+	height: auto;
+	
+	position: relative;
+	/*background: #545770;*/
 }
 #People_2
 {
-	width: 35%;
+	width: 40%;
 	position: absolute;
-	left: 7%;
-	top: 0;
+	top:-26.5%;
+	
 	/*background: #B84D4F;*/
 }
-#illustration
-{
-	width: 100%;
-	padding-bottom: 62%;
-	height: 0;
-	margin-top: 16%;
-	/*background: #728F80;*/
-	position: relative;
-}
+
 #myCarousel
 {
-	position: absolute;
+	/*position: absolute;*/
 	border-style: solid;
     border-width: 8px;
 	border-radius: 4px;
 	border-color: #FFA9BF;
+	
+}
+.right
+{
+	
+	
+	
 }
 /*------------section 2---------------*/
 /* CSS Document */
@@ -351,12 +321,14 @@ body
 	background-size: contain;
 	width: 100%;
 	height: auto;
+	
 }
 #container_3
 {
 	height: auto;
 	width: 100%;
 	background: #FFFFFF;
+	padding-bottom: 7%;
 }
 #Contain_3
 {
@@ -366,8 +338,10 @@ body
 }
 .top
 {
-	height: 300px;
+	
 	width: 100%;
+	padding-bottom: 20%;
+	height: 0;
 	/*background: #AD5253;*/
 }
 #title3
@@ -404,6 +378,7 @@ body
 	word-spacing: 3px;
 	margin-left: 10%;
 }
+.character_Instration{margin-left: 5%;}
 .LeftContain p ,.RightContain p
 {
 	margin-top: 3%;
@@ -505,17 +480,12 @@ body
 	grid-row: 5 / 7;
 	background: #D19798;
 }
-.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover,.eight:hover,.nine:hover
-{
-	z-index: 20;
-	width: 200%;
-	max-width: 400px;
-}
+
 /*------------section 3---------------*/
 /*------------section 4---------------*/
 #section4
 {
-	background: #E1E7FF url("s1410422014/P2/資產 23.png") 0 0 repeat fixed;
+	background: #E1E7FF url("s1410422014/P2/資產 46.png") 0 0 repeat fixed;
 	background-size: contain;
 	width: 100%;
 	height: auto;
@@ -525,6 +495,7 @@ body
 	height: auto;
 	width: 100%;
 	background: #FFFFFF;
+	padding-bottom: 7%;
 }
 #Contain_4
 {
@@ -532,7 +503,7 @@ body
 	width: 100%;
 	/*background: #FFFFFF;*/
 }
-.title4
+.title4,.title5
 {
 	margin-left: 5%;
 	font-family: 微軟正黑體;
@@ -540,15 +511,21 @@ body
 	color: #813260;
 	font-size: 3vw;
 }
-#myCarousela,#myCarousel5
+.title5, .title4, #title3, .title6
 {
-	margin: 5% auto;
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+#myCarousela,#myCarousel5,.Type_Video,#myCarousel6
+{
+	margin: 3% auto 5% auto;
+	width: 80%;
 }
 /*------------section 4---------------*/
 /*------------section 5---------------*/
 #section5
 {
-	background: #E1E7FF url("s1410422014/P2/資產 24.png") 0 0 repeat fixed;
+	background: #E1E7FF url("s1410422014/P2/資產 48.png") 0 0 repeat fixed;
 	background-size: contain;
 	width: 100%;
 	height: auto;
@@ -558,6 +535,7 @@ body
 	height: auto;
 	width: 100%;
 	background: #FFFFFF;
+	padding-bottom: 7%;
 }
 #Contain_5
 {
@@ -565,7 +543,33 @@ body
 	width: 100%;
 	
 }
-.title5
+
+
+
+/*------------section 5---------------*/
+/*------------section 6---------------*/
+#section6
+{
+	background: #E1E7FF url("s1410422014/P2/資產 24.png") 0 0 repeat fixed;
+	background-size: contain;
+	width: 100%;
+	height: auto;
+}
+#container_6
+{
+	height: auto;
+	width: 100%;
+	background: #FFFFFF;
+	padding-bottom: 7%;
+}
+#Contain_6
+{
+	height: auto;
+	width: 100%;
+	
+}
+
+.title6 p1
 {
 	
 	margin-left: 5%;
@@ -574,11 +578,22 @@ body
 	color: #973D4B;
 	font-size: 3vw;
 }
+.title6 p2
+{
+	
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #973D4B;
+	font-size: 1.5vw;
+	margin-left: 3%;
+	
+}
 
 
-/*------------section 5---------------*/
+
 /*------------section 6---------------*/
-#section6
+/*------------  Footer ---------------*/
+#Footer
 {
 	width: 100%;
 	height: 100%;
