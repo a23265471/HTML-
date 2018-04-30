@@ -111,25 +111,25 @@ body
 {
 	
 	margin-top: 5%;
-	margin-left: 5%;
-	width: 40%;
-	float: left;
+	
+	width: 80%;
+	
 	
 }
 
 #Introduction_Me
 {
-	width: 45%;
+	width: 100%;
 	
-	margin: 7% 5% 5% 50%;
+	
 	/*background: #122756;*/
 }
 #Introduction_Me h1
 {
 	font-family: 微軟正黑體;
 	font-weight: bold;
-	color:  #73417D;
-	font-size: 0.91em;
+	color:  #662447;
+	font-size: 1.2em;
 	
 }
 #Introduction_Me p
@@ -137,7 +137,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #89608B;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	line-height: 1.8;
 	
 }
@@ -145,9 +145,9 @@ body
 
 #School
 {
-	width: 80%;
+	width: 100%;
 	/*background: #778332;*/
-	margin:10% 10% 10% 10%; 
+	margin:10% 0 ; 
 }
 
 #School h
@@ -155,7 +155,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #73417D;
-	font-size: 0.9em;
+	font-size: 1.1em;
 		
 }
 #School p
@@ -163,7 +163,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #89608B;
-	font-size: 0.85em;
+	font-size: 0.9em;
 	line-height: 1.8;
 }
 
@@ -344,14 +344,6 @@ body
 	height: 0;
 	/*background: #AD5253;*/
 }
-#title3
-{
-	margin-left: 5%;
-	
-	font-family: Impact;
-	color: #CE8AA4;
-	font-size: 2em;
-}
 
 .MainContain
 {
@@ -362,13 +354,15 @@ body
 	/*background: #AB8AD9;*/
 }
 
+
+
 .LeftContain div
 {
-	width: 80%;
+	width: 100%;
 	text-align: justify;
 	/*background: #E09E9F;*/
 }
-.LeftContain h ,.RightContain h,.character_Instration
+.LeftContain h ,.RightContain h,.character_Instration,.LeftContain h1
 {
 	font-family: 微軟正黑體;
 	font-weight: bold;
@@ -376,9 +370,14 @@ body
 	font-size: 1.1em;
 	line-height: 1.8;
 	word-spacing: 3px;
-	margin-left: 10%;
+	
+	
+	
 }
-.character_Instration{margin-left: 5%;}
+.LeftContain h1
+{
+	margin: 0 3%;
+}
 .LeftContain p ,.RightContain p
 {
 	margin-top: 3%;
@@ -387,20 +386,24 @@ body
 	color: #7F7795;
 	font-size: 1em;
 	line-height: 1.8;
-	word-spacing: 3px;
-	margin-left: 10%;
-	
+	word-spacing: 3px;	
+	margin:0 3%; 
 }
-.RightContain
+#title3
 {
-	/*background: #C07F7E;*/
-}
-.RightContain div
-{
-	width: 80%;
-	text-align: justify;
+	font-family: Impact;
+	color: #CE8AA4;
+	font-size: 1.5em;
 }
 
+
+.RightContain div
+{
+	width: 100%;
+	text-align: justify;
+}
+/*.RightContain {background: #FFB1B2;}
+.LeftContain {background: #B8F5FF;}*/
 .Puppet
 {
 	width: 70%;
@@ -505,7 +508,6 @@ body
 }
 .title4,.title5
 {
-	margin-left: 5%;
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #813260;
@@ -561,6 +563,7 @@ body
 	width: 100%;
 	background: #FFFFFF;
 	padding-bottom: 7%;
+	
 }
 #Contain_6
 {
@@ -572,7 +575,7 @@ body
 .title6 p1
 {
 	
-	margin-left: 5%;
+	
 	font-family: Impact;
 	font-weight: bold;
 	color: #973D4B;
