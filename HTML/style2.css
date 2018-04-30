@@ -129,7 +129,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color:  #73417D;
-	font-size: 1.5vw;
+	font-size: 0.9em;
 	
 }
 #Introduction_Me p
@@ -137,7 +137,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #89608B;
-	font-size: 1.3vw;
+	font-size: 0.9vw;
 	line-height: 1.8;
 	
 }
@@ -155,7 +155,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #73417D;
-	font-size: 1.5vw;
+	font-size: 0.9em;
 		
 }
 #School p
@@ -163,7 +163,7 @@ body
 	font-family: Arial;
 	font-weight: bold;
 	color:  #89608B;
-	font-size: 1.3vw;
+	font-size: 0.8em;
 	line-height: 1.8;
 }
 
