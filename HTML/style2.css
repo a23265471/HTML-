@@ -151,10 +151,10 @@ body
 }
 #School p
 {
-	font-family: Arial;
+	font-family: 微軟正黑體;
 	font-weight: bold;
 	color:  #89608B;
-	font-size: 1em;
+	font-size: 1.2em;
 	line-height: 1.8;
 }
 
@@ -230,7 +230,7 @@ body
 .Subject h
 {
 	font-family: 微軟正黑體;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	font-weight: bold;
 	color: #89608B;
 }
@@ -339,7 +339,7 @@ body
 
 .MainContain
 {
-	width: 75%;
+	width: 80%;
 	
 	height: auto;
 	margin: 0 auto;
@@ -376,7 +376,7 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #7F7795;
-	font-size: 1em;
+	font-size: 1.2em;
 	line-height: 1.8;
 	word-spacing: 3px;	
 	margin:0 3%; 
@@ -436,12 +436,12 @@ body
 	color: #813260;
 	font-size: 1.4em;
 }
-.title5, .title4, #title3, .title6
+.title5, .title4, #title3, .title6,.title7
 {
 	margin-top: 5%;
 	margin-bottom: 3%;
 }
-#myCarousela,#myCarousel5,.Type_Video,#myCarousel6
+#myCarousela,#myCarousel5,.Type_Video,#myCarousel6,#myCarousel7
 {
 	margin: 3% auto 5% auto;
 	width: 80%;
@@ -510,14 +510,59 @@ body
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #973D4B;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	margin-left: 3%;
 	
 }
 
 
 
-/*------------section 6---------------*/
+/*------------section 7---------------*/
+#section7
+{
+	background: #E1E7FF url("s1410422014/P2/BlackRain.png") 0 0 repeat fixed;
+	background-size: contain;
+	width: 100%;
+	height: auto;
+}
+#container_7
+{
+	height: auto;
+	width: 100%;
+	background: #FFFFFF;
+	padding-bottom: 7%;
+	
+}
+#Contain_7
+{
+	height: auto;
+	width: 100%;
+	
+}
+
+.title7 p1
+{
+	
+	
+	font-family: Impact;
+	font-weight: bold;
+	color: #973D4B;
+	font-size: 2em;
+}
+.title7 p2
+{
+	
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #973D4B;
+	font-size: 1.1em;
+	margin-left: 3%;
+	
+}
+
+
+
+/*------------section 7---------------*/
 /*------------  Footer ---------------*/
 #Footer
 {
