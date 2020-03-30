@@ -45,7 +45,7 @@ body
 	border-style: none;
 }
 
-#Web_dropdown_Button
+#TittleDropdownButton_1,#TittleDropdownButton_2
 {
 	background: #FDB2C8;
 	height: 100%;
@@ -53,11 +53,11 @@ body
 	cursor: pointer;
 	
 }
-#dropdown_menu
+#TittleDropDownMenu_1,#TittleDropDownMenu_2
 {
 	background: #FFE4E3;
 }
-#Mobile_Topic_list1,#Mobile_Topic_list2
+.ChineseFont,#TittleDropDownMenuListFont_1,#TittleDropDownMenuListFont_2,#TittleDropDownMenuListFont_3
 {
 	color: #CC82B4; 
 	height: 40px; 
@@ -309,33 +309,38 @@ body
 /*------------section 2---------------*/
 #section4
 {
-	background: #E1E7FF url("s1410422014/P2/資產 46.png") 0 0 repeat fixed;
+	background: #E1E7FF;
 	
 }
 #section3
 {
-	background: #FFE9E6 url("s1410422014/P2/資產 21.png") 0 0 repeat fixed;
+	background: #FFE9E6;
 	
 	
 }
 #section7
 {
-	background: #E1E7FF url("s1410422014/P2/BlackRain.png") 0 0 repeat fixed;
+	background: #E8D9FF;
 	
 }
 #section6
 {
-	background: #E1E7FF url("s1410422014/P2/資產 24.png") 0 0 repeat fixed;
+	background: #F3DCF4;
 
 }
 #section8
 {
-	background: #E1E7FF url("s1410422014/P2/資產 48.png") 0 0 repeat fixed;
+	background: #D0F0FF;
+	
+}
+#section5
+{
+	background: #C5ECED;
 	
 }
 .Section
 {
-	background-size: contain;
+	background-size: cover;
 	width: 100%;
 	height: auto;
 }
@@ -352,17 +357,35 @@ body
 	background: #FFFFFF;
 	padding-bottom: 7%;
 }
+.Peoples img
+{
+	
+	width: 100%;
+}
+/*------------------------------*/
 /* CSS Document */
 
 .top
 {
-	
 	width: 100%;
-	padding-bottom: 20%;
+	padding-top: 10%;
+	padding-bottom: 3%;
 	height: 0;
+position: relative;
 	/*background: #AD5253;*/
 }
-
+.top div
+{
+	text-align:center;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #876588;
+	font-size: 3em;
+	line-height: 1.8;
+	word-spacing: 3px;
+		
+	
+}
 .MainContain
 {
 	width: 80%;
@@ -406,6 +429,18 @@ body
 	line-height: 1.8;
 	word-spacing: 3px;	
 	margin:0 3%; 
+}
+.RightContain a
+{
+	margin-top: 3%;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #CF6E95;
+	font-size: 1.2em;
+	line-height: 1.8;
+	word-spacing: 3px;	
+	margin:0 3%; 
+	
 }
 #title3
 {
@@ -456,14 +491,6 @@ body
 }
 /*------------section 4---------------*/
 /*------------section 5---------------*/
-#section5
-{
-	background: #E1E7FF url("s1410422014/P2/資產 48.png") 0 0 repeat fixed;
-	background-size: contain;
-	width: 100%;
-	height: auto;
-}
-
 
 /*------------section 5---------------*/
 /*------------section 6---------------*/
