@@ -261,6 +261,7 @@ body
 }
 /*--------------APP Design------------*/
 
+
 /*------------section 2---------------*/
 #section2
 {	
@@ -306,28 +307,53 @@ body
 	
 }
 /*------------section 2---------------*/
-/* CSS Document */
+#section4
+{
+	background: #E1E7FF url("s1410422014/P2/資產 46.png") 0 0 repeat fixed;
+	
+}
 #section3
 {
 	background: #FFE9E6 url("s1410422014/P2/資產 21.png") 0 0 repeat fixed;
+	
+	
+}
+#section7
+{
+	background: #E1E7FF url("s1410422014/P2/BlackRain.png") 0 0 repeat fixed;
+	
+}
+#section6
+{
+	background: #E1E7FF url("s1410422014/P2/資產 24.png") 0 0 repeat fixed;
+
+}
+#section8
+{
+	background: #E1E7FF url("s1410422014/P2/資產 48.png") 0 0 repeat fixed;
+	
+}
+.Section
+{
 	background-size: contain;
 	width: 100%;
 	height: auto;
-	
 }
-#container_3
+
+.Contain
+{
+	height: auto;
+	width: 100%;
+}
+.Container
 {
 	height: auto;
 	width: 100%;
 	background: #FFFFFF;
 	padding-bottom: 7%;
 }
-#Contain_3
-{
-	height: auto;
-	width: 100%;
-	
-}
+/* CSS Document */
+
 .top
 {
 	
@@ -409,26 +435,8 @@ body
 
 /*------------section 3---------------*/
 /*------------section 4---------------*/
-#section4
-{
-	background: #E1E7FF url("s1410422014/P2/資產 46.png") 0 0 repeat fixed;
-	background-size: contain;
-	width: 100%;
-	height: auto;
-}
-#container_4
-{
-	height: auto;
-	width: 100%;
-	background: #FFFFFF;
-	padding-bottom: 7%;
-}
-#Contain_4
-{
-	height: auto;
-	width: 100%;
-	/*background: #FFFFFF;*/
-}
+
+
 .title4,.title5
 {
 	font-family: 微軟正黑體;
@@ -455,45 +463,10 @@ body
 	width: 100%;
 	height: auto;
 }
-#container_5
-{
-	height: auto;
-	width: 100%;
-	background: #FFFFFF;
-	padding-bottom: 7%;
-}
-#Contain_5
-{
-	height: auto;
-	width: 100%;
-	
-}
-
 
 
 /*------------section 5---------------*/
 /*------------section 6---------------*/
-#section6
-{
-	background: #E1E7FF url("s1410422014/P2/資產 24.png") 0 0 repeat fixed;
-	background-size: contain;
-	width: 100%;
-	height: auto;
-}
-#container_6
-{
-	height: auto;
-	width: 100%;
-	background: #FFFFFF;
-	padding-bottom: 7%;
-	
-}
-#Contain_6
-{
-	height: auto;
-	width: 100%;
-	
-}
 
 .title6 p1
 {
@@ -518,27 +491,7 @@ body
 
 
 /*------------section 7---------------*/
-#section7
-{
-	background: #E1E7FF url("s1410422014/P2/BlackRain.png") 0 0 repeat fixed;
-	background-size: contain;
-	width: 100%;
-	height: auto;
-}
-#container_7
-{
-	height: auto;
-	width: 100%;
-	background: #FFFFFF;
-	padding-bottom: 7%;
-	
-}
-#Contain_7
-{
-	height: auto;
-	width: 100%;
-	
-}
+
 
 .title7 p1
 {
@@ -563,6 +516,11 @@ body
 
 
 /*------------section 7---------------*/
+/*------------section 5---------------*/
+
+
+
+/*------------section 5---------------*/
 /*------------  Footer ---------------*/
 #Footer
 {
