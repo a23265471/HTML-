@@ -259,6 +259,21 @@ body
 	font-weight: bold;
 	color: #CD7192;
 }
+.SkillLogo 
+{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 5%;
+	
+
+}
+.SkillLogo img
+{		
+	float:left;
+	margin-right:5%;
+	margin-left: 5%;
+}
 /*--------------APP Design------------*/
 
 
