@@ -422,8 +422,8 @@ position: relative;
 {
 	font-family: 微軟正黑體;
 	font-weight: bold;
-	color: #876588;
-	font-size: 1.1em;
+	color: #8b2c60;
+	font-size: 1.3em;
 	line-height: 1.8;
 	word-spacing: 3px;
 	
@@ -445,16 +445,16 @@ position: relative;
 	word-spacing: 3px;	
 	margin:0 3%; 
 }
-.RightContain a
+.RightContain a,.LeftContain a
 {
 	margin-top: 3%;
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	color: #CF6E95;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 1.8;
 	word-spacing: 3px;	
-	margin:0 3%; 
+	margin:0 0; 
 	
 }
 #title3
@@ -494,10 +494,11 @@ position: relative;
 	color: #813260;
 	font-size: 1.4em;
 }
-.title5, .title4, #title3, .title6,.title7
+.title5, .title4, #title3, .title6,.title7,.title8
 {
 	margin-top: 5%;
 	margin-bottom: 3%;
+	width: 100%;
 }
 #myCarousela,#myCarousel5,.Type_Video,#myCarousel6,#myCarousel7
 {
@@ -535,10 +536,8 @@ position: relative;
 /*------------section 7---------------*/
 
 
-.title7 p1
+.title7 p1,.title8 p1
 {
-	
-	
 	font-family: Impact;
 	font-weight: bold;
 	color: #973D4B;
@@ -551,18 +550,28 @@ position: relative;
 	font-weight: bold;
 	color: #973D4B;
 	font-size: 1.1em;
-	margin-left: 3%;
+	/* margin-left: 3%; */
 	
 }
 
 
 
 /*------------section 7---------------*/
-/*------------section 5---------------*/
+/*------------section 8---------------*/
+.title8 p2
+{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #7a3440;
+	font-size: 1.25em;
+	margin: 0 3%;
+	line-height: 1.8;
+
+}
 
 
 
-/*------------section 5---------------*/
+/*------------section 8---------------*/
 /*------------  Footer ---------------*/
 #Footer
 {
